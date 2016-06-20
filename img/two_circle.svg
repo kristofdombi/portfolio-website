@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="10cm" height="10cm"
+   viewBox="0 0 1000 1000"
+   preserveAspectRatio="xMinYMin"
+   style="background-color:white; border: solid 1px black;"
+>
+    <g transform="translate(500,500)">
+        <circle id="c" cx="0" cy="0" r="50" fill="red" stroke="red">
+            <animate attributeName="cy" from="0" to="-400" start="0s" dur="90s"/>
+        </circle>
+        <circle id="c" cx="0" cy="0" r="50" fill="green" stroke="green">
+            <animate attributeName="cy" from="0" to="400" start="0s" dur="90s"/>
+        </circle>
+    </g>
+</svg>
