@@ -132,6 +132,12 @@ div {
 	color: #50A2D2;
 }
 
+.circle p {
+  font-style: italic;
+  color: #50A2D2;
+  text-align: center;
+}
+
 .second {
     background: linear-gradient(90deg, #32B774, #6B7DB1);
     display: none;
@@ -480,6 +486,10 @@ div {
 		margin-top: 130px;
 		color: #50A2D2;
 	}
+
+  .circle p {
+    display: none;
+  }
 
 	.inner-landing button {
 		position: absolute;
