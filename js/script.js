@@ -1,15 +1,15 @@
 $(document).ready(function(){
-	if ($(window).width() < 960) {
+	if ($(window).width() < 768) {
 		$('#portfolio').slick({
 			swipe: true,
 			fade: false,
-			arrow: false
+			arrows: false
 		});
 	} else {
 		$('#portfolio').slick({
 			swipe: true,
 			fade: true,
-			arrow: true,
+			arrows: true,
 		});
 	}
 	// To be added
