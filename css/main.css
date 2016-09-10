@@ -106,9 +106,7 @@ div {
 
 .first {
     background-image: linear-gradient(135deg, #FCFF64 10%, #50A2D2 100%);
-    position: absolute;
     display: block;
-    opacity: 0;
     transition: opacity .5s;
 }
 
@@ -136,9 +134,7 @@ div {
 
 .second {
     background: linear-gradient(90deg, #32B774, #6B7DB1);
-    position: absolute;
     display: none;
-    opacity: 0;
     transition: opacity .5s;
 }
 
@@ -172,12 +168,18 @@ div {
 
 .third {
     background: linear-gradient(45deg, #03294f 10%, #24abe2 100%);
-    position: absolute;
     display: none;
-    opacity: 0;
     transition: opacity .5s;
 }
 
+.slick-prev,
+.slick-next {
+  z-index: 1000;
+  /*left: 20px;*/
+}
+.slick-prev {
+  left: 20px;
+}
 /*.fourth {
     background: linear-gradient(90deg, #F92C7B, #FF871D);
     position: absolute;
@@ -401,7 +403,7 @@ div {
 }
 
 .cta-btn label {
-	
+
 }
 
 .active {
@@ -417,7 +419,7 @@ div {
 }
 
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
@@ -438,7 +440,7 @@ div {
 }
 
 @media (min-width: 760px) {
-	
+
 	.blue {
 	background-color: #50A2D2;
 	}
