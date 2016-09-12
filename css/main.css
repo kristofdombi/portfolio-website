@@ -30,21 +30,52 @@ div {
     width: 100%;
 }
 
+/*
+
+Animations
+
+*/
+
+#circle-blue-1,
+#circle-blue-2,
+#circle-yellow-1,
+#circle-yellow-2 {
+  -webkit-transition: all 4s ease-out;
+  -moz-transition: all 4s ease-out;
+  -o-transition: all 4s ease-out;
+  transition: all 4s ease-out;
+  transform-origin: 50% 50%;
+  animation: grow 30s ease-out infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.8)
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
 .landing {
 	height: 100vh;
-	background-image: url("../img/svg_background.svg");
-	background-size: cover;
-	display: flex;
-    flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
+  position: relative;
 }
 
 .inner-landing {
 	height: 240px;
-	width: 600px;
-	position: relative;
+	width: 100%;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .blue {
@@ -401,7 +432,7 @@ div {
 }
 
 .cta-btn label {
-	
+
 }
 
 .active {
@@ -417,7 +448,7 @@ div {
 }
 
 
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
@@ -437,8 +468,14 @@ div {
 	}
 }
 
+@media (min-width: 600px) {
+  .inner-landing {
+    width: 600px;
+  }
+}
+
 @media (min-width: 760px) {
-	
+
 	.blue {
 	background-color: #50A2D2;
 	}
