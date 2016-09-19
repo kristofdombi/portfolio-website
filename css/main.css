@@ -30,14 +30,15 @@ div {
     width: 100%;
 }
 
-/*
+/**************
 
 Animations
 
-*/
+**************/
 
 #circle-blue-1,
 #circle-blue-2,
+#circle-blue-3,
 #circle-yellow-1,
 #circle-yellow-2 {
   -webkit-transition: all 4s ease-out;
@@ -46,6 +47,26 @@ Animations
   transition: all 4s ease-out;
   transform-origin: 50% 50%;
   animation: grow 30s ease-out infinite;
+  transform: scale(0);
+}
+
+#circle-blue-1 {
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+
+#circle-blue-2 {
+  animation-delay: 2s;
+  animation-duration: 40s;
+}
+
+#circle-yellow-1 {
+  animation-delay: 0.5s;
+  animation-duration: 25s;
+}
+
+#circle-yellow-2 {
+  animation-delay: 2.5s
 }
 
 @keyframes grow {
@@ -119,7 +140,6 @@ Animations
 
 .inner-landing button:hover {
 	box-shadow: 0 3px 6px 2px #50A2D2;
-	transform: scale(1.03);
 }
 
 .secondary {
