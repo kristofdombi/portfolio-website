@@ -99,9 +99,28 @@ Animations
   transform: translate(-50%,-50%);
 }
 
+/*@-webkit-keyframes appear {
+  0% {width: 0;}
+  100% {width: 100%;}
+}*/
+
 .blue {
 	background-color: #50A2D2;
 }
+
+/*@-webkit-keyframes h1-appear {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  80% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
 
 .blue h1 {
 	color: #fff;
@@ -130,7 +149,6 @@ Animations
 	border: 1px solid #FCFF64;
 	font-weight: 500;
 	color: #757575;
-	box-shadow: 0 3px 5px 0 #50A2D2;
 	transition: all .3s ease-in-out;
 	position: absolute;
     top: 90%;
@@ -139,7 +157,9 @@ Animations
 }
 
 .inner-landing button:hover {
-	box-shadow: 0 3px 6px 2px #50A2D2;
+  background-color: #50A2D2;
+  color: #fff;
+  border-color: #50A2D2;
 }
 
 .secondary {
