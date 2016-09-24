@@ -182,7 +182,7 @@ Animations
     transform: translateY(60px);
   }
   100% {
-    transform: translateY(-30px);
+    transform: translateY(-25px);
   }
 }
 
