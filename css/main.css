@@ -193,6 +193,7 @@ Animations
 }
 
 .section-scroll {
+  display:none;
   transform: translateY(-50%);
   position: absolute;
   left: 50%;
@@ -661,6 +662,9 @@ Animations
 @media (min-width: 600px) {
   .inner-landing {
     width: 600px;
+  }
+  .section-scroll {
+    display: block;
   }
 }
 
