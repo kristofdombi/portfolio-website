@@ -505,7 +505,60 @@ Animations
 #messenger-shape,
 #twitter-shape,
 #twitter-circle {
-  transition: fill .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.phone-icon:hover .phone #phone-circle,
+.mail-icon:hover .mail #mail-circle {
+  fill: #50A2D2;
+}
+
+.mail-icon:hover .mail #mail-shape,
+.phone-icon:hover .phone #phone-shape {
+  fill: #fff;
+}
+
+#phone-shape,
+#mail-shape {
+  transform-origin: 50% 50%;
+}
+
+#phone-shape {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+}
+
+.phone-icon:hover .phone #phone-shape {
+  transform: rotate(0);
+}
+
+.mail #mail-circle {
+  overflow: hidden;
+}
+
+.mail-icon:hover .mail #mail-shape {
+  animation: send 1s .5s ease-in-out;
+}
+
+@keyframes send {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(33px);
+    opacity: 0;
+  }
+  34% {
+    transform: translateX(-66px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .mail:hover #mail-circle,
@@ -713,6 +766,10 @@ Animations
 }
 
 @media (min-width: 760px) {
+
+  .pm-icons p {
+    margin-top: 10px;
+  }
 
 	.blue {
 	background-color: #50A2D2;
