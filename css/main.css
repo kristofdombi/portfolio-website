@@ -489,6 +489,45 @@ Animations
 
 /* Contact */
 
+/*Icons*/
+
+#mail-circle,
+#mail-shape,
+#phone-circle,
+#phone-shape,
+#linkedin-circle,
+#linkedin-shape,
+#snapchat-circle,
+#snapchat-shape,
+#messenger-circle,
+#instagram-circle,
+#instagram-shape,
+#messenger-shape,
+#twitter-shape,
+#twitter-circle {
+  transition: fill .3s ease-in-out;
+}
+
+.mail:hover #mail-circle,
+.phone:hover #phone-circle,
+.linkedin:hover #linkedin-circle,
+.snapchat:hover #snapchat-circle,
+.messenger:hover #messenger-circle,
+.instagram:hover #instagram-circle,
+.twitter:hover #twitter-circle {
+  fill: #50A2D2;
+}
+
+.mail:hover #mail-shape,
+.phone:hover #phone-shape,
+.linkedin:hover #linkedin-shape,
+.snapchat:hover #snapchat-shape,
+.instagram:hover #instagram-shape,
+.messenger:hover #messenger-shape,
+.twitter:hover #twitter-shape {
+  fill: #fff;
+}
+
 .contact {
 	height: auto;
 }
@@ -516,6 +555,11 @@ Animations
 
 .phone-mail-contact {
 	margin: 20px 0 20px 0;
+}
+
+.phone-mail-contact .phone,
+.phone-mail-contact .mail {
+  margin: 0 auto;
 }
 
 .phone-mail-contact a, p {
