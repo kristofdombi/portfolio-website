@@ -386,8 +386,16 @@ Animations
 
 .third {
     background: linear-gradient(45deg, #03294f 10%, #24abe2 100%);
-    display: none;
-    transition: opacity .5s;
+}
+
+.fourth {
+  background: linear-gradient(45deg, #a2acb8, #63798e);
+}
+
+.fourth .inner-two #intellyo-link,
+.fourth .inner-two #design-link {
+  text-decoration: underline;
+  color: #fff;
 }
 
 .slick-prev,
