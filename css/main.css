@@ -398,6 +398,10 @@ Animations
   color: #fff;
 }
 
+.fourth .inner-two {
+  margin-top: -70px;
+}
+
 .slick-prev,
 .slick-next {
   z-index: 1000;
@@ -770,6 +774,21 @@ Animations
   }
   .section-scroll {
     display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  .inner-two {
+    text-align: left;
+  }
+  .inner-two .cta-btn {
+    margin-left: 20px;
+  }
+  .fourth .inner-two {
+    margin-top: 0;
+  }
+  .fourth .inner-two .cta-btn {
+    margin-left: 20px;
   }
 }
 
